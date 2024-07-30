@@ -27,6 +27,7 @@ app.post("/products", (req: Request, res: Response) => {
 // Endpoint untuk mendapatkan semua produk
 app.get("/products", (req: Request, res: Response) => {
   // Logika untuk mendapatkan semua produk
+  res.json(req.body);
   res.send("List of products");
 });
 
